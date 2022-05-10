@@ -17,5 +17,96 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="pageHeader">
+      <div class="container">
+        <div class="menuWrapper">
+          <a class="logo" href="./index.html">Zynger s.r.o. </a>
+          <button
+            class="buttonMenu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="iconMenu">
+              <use href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="buttonMenuClose js-close-menu">
+            <svg class="iconMenu">
+              <use href="./images/icons.svg#menu_close_40px"></use>
+            </svg>
+          </button>
+          <div class="menuWrapper">
+            <nav class="navigation">
+              <ul class="lists navigation__items">
+                <li class="navigation__item">
+                  <a
+                    class="links link__navigation is-current"
+                    href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="links link__navigation" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="links link__navigation" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="contacts__thumb">
+              <ul class="lists contacts">
+                <li class="contacts__item">
+                  <a class="links link__contacts" href="tel:+380961111111">
+                    <svg class="smartphone">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="links link__contacts mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="envelope">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="lists social__menu">
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Instagram</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Twitter</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Facebook</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
 </html>

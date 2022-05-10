@@ -1,0 +1,31 @@
+.logo {
+  display: block;
+  font-family: $logo-font;
+
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $current-dark-color;
+
+  transition: color $duration $function;
+
+  @media screen and(min-width:768px) {
+    padding: 26px 0;
+    margin-right: 76px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 100px;
+  }
+
+  &:hover.logo--header,
+  &:focus.logo--header,
+  &:hover.logo--footer,
+  &:focus.logo--footer {
+    color: $accent-color;
+  }
+}
