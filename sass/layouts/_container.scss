@@ -20,4 +20,13 @@
       display: flex;
     }
   }
+
+  .hero & {
+    max-width: 360px;
+    padding: 0;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+    }
+  }
 }

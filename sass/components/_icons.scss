@@ -4,3 +4,25 @@
   fill: currentColor;
   transition: color $duration $function;
 }
+
+.envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 200px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &.hero {
+    padding: 0;
+  }
+
+  &-team {
+    background-color: $thumb-background-color;
+    text-align: center;
+  }
+
+  &__about {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
+  }
+}

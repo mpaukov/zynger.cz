@@ -1,0 +1,110 @@
+.link__navigation {
+  @include link(40px, 1.18);
+  display: block;
+  padding: 25px 16px;
+
+  color: $current-title-color;
+  @include transition(color, $duration, $function);
+
+  @media screen and (min-width: 768px) {
+    @include link(14px, 1.14);
+    padding: 32px 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.is-current {
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+.contacts {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.link__contacts {
+  @include link(34px, 1.18);
+  display: block;
+
+  padding: 16px 16px;
+
+  color: $current-text-color;
+  @include transition(color, $duration, $function);
+
+  @media screen and (max-width: 420px) {
+    font-size: 8vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include link(14px, 1.14);
+    padding: 0;
+    padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.mail {
+    @media screen and (max-width: 419px) {
+      @include link(6vw, 1.17);
+    }
+
+    @media screen and (min-width: 420px) and(max-width: 767px) {
+      @include link(24px, 1.17);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      padding-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin: 0;
+    }
+  }
+}

@@ -34,3 +34,48 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
+
+.navigation {
+  @media screen and (min-width: 768px) {
+    margin-right: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 314px;
+  }
+}
+
+.navigation__items {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.navigation__item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.contacts__thumb {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item {
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
