@@ -1,0 +1,51 @@
+.overlay {
+  position: absolute;
+  bottom: 0;
+
+  display: flexbox;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: $overlay-card-color;
+
+  transform: translateY(101%);
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+
+  overflow-y: auto;
+
+  .portfolio-card:hover &,
+  .portfolio-card:focus &,
+  .portfolio-card:focus-within & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px $current-text-color;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $minor-accent-color;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: $current-text-color;
+  }
+}
+
+.overlay__text {
+  margin: 0;
+  padding: 63px 24px;
+  color: $current-light-color;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
