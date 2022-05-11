@@ -1,29 +1,18 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  height: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &.hero {
     padding: 0;
+    height: 200px;
   }
 
-  &-team {
-    background-color: $thumb-background-color;
-    text-align: center;
-  }
-
-  &__about {
-    @media screen and (max-width: 1199px) {
-      display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-top: 0;
-    }
+  &.about {
+    padding: 0;
   }
 }
