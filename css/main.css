@@ -431,6 +431,16 @@ body {
   text-align: left;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
 .logo {
   display: block;
   font-family: "Lobster", cursive;
@@ -447,13 +457,13 @@ body {
 @media screen and (min-width: 768px) {
   .logo {
     padding: 26px 0;
-    margin-right: 76px;
+    margin-right: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-right: 100px;
+    margin-right: 80px;
   }
 }
 

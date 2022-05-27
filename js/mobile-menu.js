@@ -18,7 +18,10 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
   mobileMenu.addEventListener('click', e => {
-    if (e.target.nodeName !== 'A') {
+    if (
+      e.target.nodeName !== 'A' ||
+      window.matchMedia('(min-width: 768px)').matches
+    ) {
       return;
     }
     toggleMenu();
