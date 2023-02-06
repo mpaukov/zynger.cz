@@ -1,51 +1,59 @@
 .overlay {
-  position: absolute;
-  bottom: 0;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
 
-  display: flexbox;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+    display: flexbox;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 
-  background-color: $overlay-card-color;
+    background-color: $overlay-card-color;
 
-  transform: translateY(101%);
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: $duration;
-  transition-timing-function: $function;
+    transform: translateY(101%);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: $duration;
+    transition-timing-function: $function;
 
-  overflow-y: auto;
+    overflow-y: auto;
 
-  .portfolio-card:hover &,
-  .portfolio-card:focus &,
-  .portfolio-card:focus-within & {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    .portfolio-card:hover &,
+    .portfolio-card:focus &,
+    .portfolio-card:focus-within & {
+      transform: translateY(0);
+      opacity: 1;
+    }
 
-  &::-webkit-scrollbar {
-    width: 10px;
-  }
-  &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px $current-text-color;
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: $minor-accent-color;
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: $current-text-color;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px $current-text-color;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $minor-accent-color;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: $current-text-color;
+    }
   }
 }
 
 .overlay__text {
+  color: $current-dark-color;
   margin: 0;
-  padding: 63px 24px;
-  color: $current-light-color;
+  padding: 10px;
+
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: justify;
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+    color: $current-light-color;
+  }
 }

@@ -14,7 +14,7 @@
 
   @media screen and(max-width:767px) {
     &:not(:last-of-type) {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
   }
 
@@ -45,7 +45,7 @@
 
 .portfolio-card__body {
   border-top: 0;
-  padding: 20px 24px;
+  padding: 12px;
   // border: 1px solid $border-color;
   border-top: none;
 
