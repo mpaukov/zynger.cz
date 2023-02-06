@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontaktní informace Zynger s.r.o.
+      Контактная информация Zynger s.r.o."
+    />
+    <meta
+      name="keywords"
+      content="Výroba klíčů|Oprava obuvi|Výměna baterie|kontakty"
+    />
+    <title>Zynger s.r.o. Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="pageHeader">
+      <div class="container">
+        <div class="menuWrapper">
+          <a class="logo" href="./index.html">Zynger s.r.o. </a>
+          <button
+            class="buttonMenu js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="menu open"
+          >
+            <svg class="iconMenu">
+              <use href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button
+            class="buttonMenuClose js-close-menu"
+            aria-expanded="true"
+            aria-controls="mobile-menu"
+            aria-label="menu close"
+          >
+            <svg class="iconMenu">
+              <use href="./images/icons.svg#menu_close_40px"></use>
+            </svg>
+          </button>
+          <div class="menuWrapper">
+            <nav class="navigation">
+              <ul class="navigation__items">
+                <li class="navigation__item">
+                  <a class="link__navigation" href="./index.html">Domů</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="link__navigation" href="./index.html#about"
+                    >O nás</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="link__navigation" href="./index.html#sluzby"
+                    >Služby</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="link__navigation is-current" href="./contacts.html"
+                    >Kontakty</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts__thumb">
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a class="link__contacts" href="tel:+420777850288">
+                    <svg class="smartphone">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +420 777 850 288
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="link__contacts mail"
+                    href="mailto:zynger@centrum.cz"
+                  >
+                    <svg class="envelope">
+                      <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    zynger@centrum.cz
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+  </body>
+</html>

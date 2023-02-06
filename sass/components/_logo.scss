@@ -15,17 +15,15 @@
 
   @media screen and(min-width:768px) {
     padding: 26px 0;
-    margin-right: 60px;
+    margin-right: 48px;
   }
 
   @media screen and(min-width:1200px) {
     margin-right: 80px;
   }
 
-  &:hover.logo--header,
-  &:focus.logo--header,
-  &:hover.logo--footer,
-  &:focus.logo--footer {
+  &:hover.logo,
+  &:focus.logo {
     color: $accent-color;
   }
 }
