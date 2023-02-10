@@ -13,12 +13,12 @@
 
   transition: color $duration $function;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding: 26px 0;
     margin-right: 48px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 80px;
   }
 

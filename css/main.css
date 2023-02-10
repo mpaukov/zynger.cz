@@ -787,6 +787,30 @@ footer {
     margin: 0;
   }
 }
+.link__contacts--accent {
+  display: block;
+  font-family: "Lobster", cursive;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: center;
+  color: #2196f3;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .link__contacts--accent {
+    font-size: 44px;
+    line-height: 1.36;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 
 .images {
   width: 450px;
