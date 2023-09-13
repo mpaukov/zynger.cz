@@ -37,3 +37,27 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+(async () => {
+  const date = new Date().toString();
+  const href = window.location.href;
+  const referrer = document.referrer;
+  let IP;
+  await fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => (IP = data.ip));
+
+  await fetch('https://zynger-serv.vercel.app/api/visitors', {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify({
+      date,
+      href,
+      referrer,
+      ip: IP,
+    }), // body data type must match "Content-Type" header
+  });
+})();
